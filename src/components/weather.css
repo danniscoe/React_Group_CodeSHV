@@ -1,0 +1,54 @@
+.weather {
+  
+  margin-top: 20px;
+  border: 3px dashed grey;
+  border-radius: 30px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  background-color: rgb(112, 201, 204);
+  width: max-content;
+  padding: 0px 20px 20px 20px;
+  margin-left: 25%;
+  background: rgba(96, 182, 231,0.3);
+  border: 2px solid black;
+}
+.weather .title {
+  font-size: 5rem;
+  font-family: "Times New Roman", Times, serif;
+}
+.weather form {
+  margin-top: 30px;
+}
+.weather form input {
+  padding: 10px;
+  border: none;
+  border-bottom: 2px dashed rgb(2, 57, 88);
+  margin-right: 10px;
+}
+
+.weather form input:focus {
+  outline: none;
+  background: transparent;
+  border-bottom: 5px dashed rgb(44, 86, 110);
+}
+
+.weather .getweather {
+  margin-left: 10px;
+  padding: 8px;
+  font-size: 1.3rem;
+  border: none;
+  border-radius: 10px;
+  border: 2px solid black;
+  background: rgb(2, 57, 88, 0.8);
+  cursor: pointer;
+  color: rgb(51, 145, 59);
+}
+
+.weather .getweather:hover {
+  background: transparent;
+  color: black;
+}
+
+.weather .getweather:focus {
+  outline: solid;
+}

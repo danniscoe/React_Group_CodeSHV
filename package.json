@@ -1,29 +1,26 @@
 {
-  "name": "demo-app",
-  "version": "0.1.0",
-  "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.11.6",
-    "@testing-library/react": "^11.2.2",
-    "@testing-library/user-event": "^12.6.0",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
+    "bootstrap": "^4.5.3",
+    "npm": "^7.1.2",
+    "react-bootstrap": "^1.4.0",
+    "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.1",
-    "web-vitals": "^0.2.4"
+    "react-scripts": "^4.0.1"
   },
+  "devDependencies": {
+    "prettier": "2.2.1"
+  },
+  "name": "Danni",
+  "version": "1.0.0",
+  "main": "Counter.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "react-scripts start"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
   "browserslist": {
     "production": [
       ">0.2%",

@@ -1,0 +1,85 @@
+.displayweather {
+  background-image: url(https://images.theconversation.com/files/232705/original/file-20180820-30593-1nxanpj.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1356&h=668&fit=crop);
+  margin-top: 40px;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.displayweather .maincard {
+  width: 500px;
+  margin-top: 20px;
+  align-self: center;
+  padding: 50px;
+  border-radius: 20px;
+  position: relative;
+  background: rgb(96, 182, 231);
+  border: 2px solid black;
+}
+
+.displayweather .maincard .cardtitle {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 2rem;
+}
+
+.displayweather .maincard .cardsubtitle {
+  position: absolute;
+  left: 10px;
+  color: rgb(10, 10, 10);
+  margin-top: 20px;
+}
+.displayweather h1 {
+  font-size: 3rem;
+  margin: 20px;
+  margin-left: -140px;
+}
+
+.displayweather .weather-icon {
+  width: 100px;
+  position: absolute;
+  top: 50px;
+}
+
+.displayweather .weather-main {
+  position: absolute;
+  top: 120px;
+  left: 310px;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.displayweather .weather-description {
+  position: absolute;
+  left: 20px;
+  font-size: 1.6rem;
+}
+.displayweather .weatherdetails {
+  margin-left: 50px;
+  margin-right: 50px;
+
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
+  grid-gap: 20px;
+}
+.displayweather .weatherdetails .section1 {
+  justify-self: right;
+  width: 300px;
+  border-radius: 2px;
+  border-color: rgb(23, 26, 25);
+}
+
+h4 {
+  text-align: absolute;
+  margin-right: 30px;
+  font-size: 1.4rem;
+}
+
+td {
+  border-bottom: 2px dotted rgb(6, 248, 248);
+}
+
+.displayweather .weatherdetails span {
+  font-size: 1.6rem;
+}
