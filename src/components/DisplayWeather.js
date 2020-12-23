@@ -20,7 +20,7 @@ function DisplayWeather(props) {
 
             <h1>
               {" "}
-              {Math.floor(data.main.temp - 273.15)}
+              {Math.floor(((9/5) * (data.main.temp - 273.15)) + 32)}
               <sup>o</sup>
             </h1>
             <span className="weather-main">{data.weather[0].main}</span>
@@ -39,8 +39,8 @@ function DisplayWeather(props) {
                   </td>
                   <td>
                     <span>
-                      {Math.floor(data.main.temp_max - 273.15)}/
-                      {Math.floor(data.main.temp_min - 273.15)}
+                      {Math.floor( ( (1.8) * (data.main.temp_max - 273.15)) + 32)}/
+                      {Math.floor( ( (1.8) * (data.main.temp_min - 273.15))+ 32)}
                     </span>
                   </td>
                 </tr>
@@ -65,7 +65,7 @@ function DisplayWeather(props) {
                     <h4>Visibility</h4>
                   </td>
                   <td>
-                    <span>{data.visibility / 1000} Km</span>
+                    <span>{data.visibility * 0.00062137} Miles</span>
                   </td>
                 </tr>
               </table>
@@ -78,7 +78,7 @@ function DisplayWeather(props) {
                     <h4>Wind</h4>
                   </td>
                   <td>
-                    <span>{Math.floor((data.wind.speed * 18) / 5)} km/hr</span>
+                    <span>{Math.floor(data.wind.speed * 2.236936)} mph</span>
                   </td>
                 </tr>
                 <tr>
