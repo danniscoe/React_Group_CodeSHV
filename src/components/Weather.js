@@ -63,9 +63,7 @@ function Weather() {
           name="country"
           onChange={(e) => handleChange(e)}
         />
-        <button className="getweather" onClick={(e) => weatherData(e)}>
-          Here comes the sun!
-        </button>
+        <button className="getweather" onClick={(e) => weatherData(e)}>Submit</button>
       </form>
       
       {/* {console.log(weather)} */}
