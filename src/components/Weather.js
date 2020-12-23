@@ -2,6 +2,11 @@ import React, { useState } from "react";
 import DisplayWeather from "./DisplayWeather";
 import "./weather.css";
 
+  function refreshWeather() {
+    // working out the details on when and where to call the 5 minute timer
+      nIntervId = setInterval(Weather, 300000);
+    }
+
 function Weather() {
   const [weather, setWeather] = useState([]);
   const [form, setForm] = useState({
@@ -9,7 +14,7 @@ function Weather() {
     country: "",
   });
 
-  const APIKEY = "Enter Your APIKEY here";
+  const APIKEY = "94782b26f0f7dd835a8faee04d659260";
   async function weatherData(e) {
     e.preventDefault();
     if (form.city == "") {

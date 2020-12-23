@@ -20,11 +20,11 @@ function DisplayWeather(props) {
 
             <h1>
               {" "}
-              {Math.floor(((9/5) * (data.main.temp - 273.15)) + 32)}
+              {Math.floor(((1.8) * (data.main.temp - 273.15)) + 32)}
               <sup>o</sup>
             </h1>
             <span className="weather-main">{data.weather[0].main}</span>
-            <img className="weather-icon" src={iconurl} alt="" srcset="" />
+            <img className="weather-icon" src={iconurl} alt=""/>
             <span className="weather-description">
               {" "}
               {data.weather[0].description}
@@ -65,7 +65,7 @@ function DisplayWeather(props) {
                     <h4>Visibility</h4>
                   </td>
                   <td>
-                    <span>{data.visibility * 0.00062137} Miles</span>
+                    <span>{Math.floor(data.visibility * 0.00062137)} Miles</span>
                   </td>
                 </tr>
               </table>
