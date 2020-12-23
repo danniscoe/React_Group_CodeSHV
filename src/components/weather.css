@@ -3,13 +3,18 @@
   border: 3px dashed grey;
   border-radius: 20px;
   padding-bottom: 30px;
+  background-color: rgb(111, 216, 219);
   width: max-content;
   padding: 0px 20px 20px 20px;
   margin-left: 25%;
+  background: rgb(96, 182, 231);
+  border: 2px solid black;
 }
+/* .weather .background {
+  background-image: url('https://www.healthwire.co/wp-content/uploads/2020/07/weather.png');
+} */
 .weather .title {
   font-size: 4rem;
-
   font-family: "Times New Roman", Times, serif;
 }
 .weather form {
@@ -24,7 +29,7 @@
 
 .weather form input:focus {
   outline: none;
-  border-bottom: 3px dashed rgb(2, 57, 88);
+  border-bottom: 5px dashed rgb(2, 57, 88);
 }
 
 .weather .getweather {
@@ -36,7 +41,7 @@
   border: 2px solid black;
   background: rgb(2, 57, 88, 0.8);
   cursor: pointer;
-  color: whitesmoke;
+  color: rgb(51, 145, 59);
 }
 
 .weather .getweather:hover {
@@ -45,5 +50,5 @@
 }
 
 .weather .getweather:focus {
-  outline: none;
+  outline: solid;
 }
