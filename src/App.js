@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import "./components/displayweather.css";
 import Weather from "./components/Weather";
 
 function App() {
@@ -11,3 +12,4 @@ function App() {
 }
 
 export default App;
+
