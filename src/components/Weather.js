@@ -3,7 +3,7 @@ import DisplayWeather from "./DisplayWeather";
 import "./weather.css";
 
   function refreshWeather() {
-    // working out the details on when and where to call the 5 minute timer
+    /* working out the details on when and where to call the 5 minute timer */
       nIntervId = setInterval(Weather, 300000);
     }
 
@@ -33,6 +33,10 @@ function Weather() {
   const handleChange = (e) => {
     let name = e.target.name;
     let value = e.target.value;
+    
+    /* removing special char excluding the dash */
+    value = e.target.value.replace(/[!$%^&*()_+|~=`{}[:;<>?,.@#\]]/g, "");
+    e.target.value = value;
 
     if (name == "city") {
       setForm({ ...form, city: value });
@@ -52,7 +56,7 @@ function Weather() {
           name="city"
           onChange={(e) => handleChange(e)}
         />
-        &nbsp; &nbsp; &nbsp;&nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp;
         <input
           type="text"
           placeholder="Country"
